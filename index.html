@@ -1,0 +1,116 @@
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>Yash Kalyan</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons ================================================== -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+
+    <!-- home
+   ================================================== -->
+    <section id="home" class="home-particles">
+
+        <div class="shadow-overlay"></div>
+
+        <div class="content-wrap-table">
+
+            <div class="main-content-tablecell">
+
+                <div class="row">
+                    <div class="col-twelve">
+
+                        <div id="demo">
+
+                        </div>
+
+                        <div class="bottom-text">
+                            <h1>Our site is launching soon.</h1>
+                            <p>
+                                This is going to be personal website.<br>And I am trying to be awsome. </p>
+                        </div>
+
+                    </div>
+                    <!-- /twelve -->
+
+
+                </div>
+                <!-- /row -->
+
+            </div>
+            <!-- /main-content -->
+
+        </div>
+        <!-- /content-wrap -->
+
+    </section>
+    <!-- /home -->
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- Java Script
+   ================================================== -->
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 30, 2021 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
